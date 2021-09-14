@@ -1,0 +1,76 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_ingredientes",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tiempo_coccion",
+						"type": "uint256"
+					}
+				],
+				"name": "sandwich",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "verIngredientesComida",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ejercicios solidity/Funciones avanzadas/internal_external1.sol": "Sandwich"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ejercicios solidity/Funciones avanzadas/internal_external1.sol": {
+			"keccak256": "0x9e5cad28fe75ab3ac4508a791ebf1f112dde22adf51ab3b07b1b43e039c47867",
+			"urls": [
+				"bzz-raw://7f565bcf2d608dc599096630332ae160ee4324ae888ba5e1c51d254a19ae73a2",
+				"dweb:/ipfs/QmPHdGhdAy1JX2515oT1pMyiJ8bEXuQantushsyD5GWXMR"
+			]
+		}
+	},
+	"version": 1
+}

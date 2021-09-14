@@ -1,0 +1,69 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ejercicios solidity/Factory/factory.sol": "SmartContract2"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ejercicios solidity/Factory/factory.sol": {
+			"keccak256": "0x6a9a65e317c5c00851a9d11cff614f3c3662129846baea0f7269a54a78e4e02a",
+			"urls": [
+				"bzz-raw://78f0400f207de7c83d7218343d9263d16e3fc1e1643021e9d86d911b9af47651",
+				"dweb:/ipfs/Qmbs6cpnZKvfWKPZQHEk369XsHqqhpBbY4F5EkE5ryBnbs"
+			]
+		}
+	},
+	"version": 1
+}

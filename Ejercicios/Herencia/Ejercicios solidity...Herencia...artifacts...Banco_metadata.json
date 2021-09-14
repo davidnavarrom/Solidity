@@ -1,0 +1,74 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "mapaCliente",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "billetera",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dinero",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ejercicios solidity/Herencia/banco.sol": "Banco"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ejercicios solidity/Herencia/banco.sol": {
+			"keccak256": "0x21846e6b54f40afe984bde1252949f0954a20156a5155cc1c129c9a7b3963c7e",
+			"urls": [
+				"bzz-raw://f73181cf3dcabd0124c44784d30c4a60d144f02327663890ddd803697b22a158",
+				"dweb:/ipfs/QmdnMqabm5kX8jWrq89EjXfrSRMYHAiJezChd9v6q2FpBY"
+			]
+		}
+	},
+	"version": 1
+}

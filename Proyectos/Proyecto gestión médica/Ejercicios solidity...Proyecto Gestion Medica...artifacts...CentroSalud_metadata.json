@@ -1,0 +1,148 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_direccion",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nuevoResultado",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "DireccionCentroSalud",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "direccionContrato",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idPersona",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "_resultadoCOVID",
+						"type": "bool"
+					},
+					{
+						"internalType": "string",
+						"name": "_codigoIPFS",
+						"type": "string"
+					}
+				],
+				"name": "resultadosPruebaCovid",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_idPersona",
+						"type": "string"
+					}
+				],
+				"name": "visualizarResultados",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ejercicios solidity/Proyecto Gestion Medica/oms.sol": "CentroSalud"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ejercicios solidity/Proyecto Gestion Medica/oms.sol": {
+			"keccak256": "0x582ad7e2b47afafa00752d3b1e32b220d2985a4b80656ceae830280cfdae6de6",
+			"urls": [
+				"bzz-raw://e151f7408bd7ebf81f81615fddafb29944d536b6e635edfa8b726c29af08dfb8",
+				"dweb:/ipfs/QmddcqnDbV6LKqeKcrEWB3Ssf2ZJxtgjFnWH5AA4rxHwXX"
+			]
+		}
+	},
+	"version": 1
+}

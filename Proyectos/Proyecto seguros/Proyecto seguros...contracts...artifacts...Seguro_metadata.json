@@ -1,0 +1,354 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					},
+					{
+						"internalType": "contract IERC20",
+						"name": "_token",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_insurance",
+						"type": "address"
+					},
+					{
+						"internalType": "address payable",
+						"name": "_aseguradora",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "direccion",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "EventoDevolverTokens",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "asegurado",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "laboratorio",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "servicio",
+						"type": "string"
+					}
+				],
+				"name": "EventoPeticionServicioLab",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "direccion",
+						"type": "address"
+					}
+				],
+				"name": "EventoSelfDestruct",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "asegurado",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "servicio",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "coste",
+						"type": "uint256"
+					}
+				],
+				"name": "EventoServicioPagado",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "balanceOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "compraTokens",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "darDeBaja",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_numTokens",
+						"type": "uint256"
+					}
+				],
+				"name": "devolverTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombreServicio",
+						"type": "string"
+					}
+				],
+				"name": "estadoServicioCliente",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "ethers",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "historialAseguradora",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombreServicio",
+						"type": "string"
+					}
+				],
+				"name": "historialCliente",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "servicio",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "precio",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "historialClienteLaboratorio",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "nombreServicio",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "precioServicio",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "direccionLaboratorio",
+								"type": "address"
+							}
+						],
+						"internalType": "struct Seguro.ServiciosSolicitadosLaboratorio[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_servicio",
+						"type": "string"
+					}
+				],
+				"name": "peticionServicio",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "direccionLab",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_servicio",
+						"type": "string"
+					}
+				],
+				"name": "peticionServicioLab",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Proyecto seguros/contracts/InsuranceFactory.sol": "Seguro"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Proyecto seguros/contracts/ERC20.sol": {
+			"keccak256": "0x23c04361b1e770c614ce5d88bc46b9d162f092cb280aa65549f14faf5f21e223",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://04605d3394faad46e6d51ac525d29a8259244434a8bae583be2838eea1f59e01",
+				"dweb:/ipfs/QmbYSv3iYqZHWjPasxCoroCwt5unsQonQzc7tu6SqJVD3a"
+			]
+		},
+		"Proyecto seguros/contracts/InsuranceFactory.sol": {
+			"keccak256": "0xe223915353ccc2c0c4675317d8078e8d1dba4ae48081d41f39636d5d35730f85",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b66cb385caeac5c10023f30e1512a2858dfb4e5eb28e4a30c27ac13a92690ff7",
+				"dweb:/ipfs/QmevBwpGASwh6Jx5zPCmoy73GtWVPYGpC7jB6U8Spvf2NU"
+			]
+		},
+		"Proyecto seguros/contracts/OperacionesBasicas.sol": {
+			"keccak256": "0xb732c47deae9c5a210520669f7bbf2d48d5a56aeb1905f1ab02910236eb9affc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://a818973d335a32c70212c336d90dc22ad577cc759f0a21bb9dbec93b7c8bafc7",
+				"dweb:/ipfs/Qma7BJqrhfwLxcHJzAHnC24Pqjg3SWx6f1ZQKVjtoNFfd8"
+			]
+		},
+		"Proyecto seguros/contracts/SafeMath.sol": {
+			"keccak256": "0x10b026f5bf6336222f045103d95b94c408fcd4b36095222431626663f519da6a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cb82567f03c95c1518b6d09700323ef2d11bcf587a23f220b5aef4cd0cdf433f",
+				"dweb:/ipfs/QmURQ56waPNQnLAeQYVDui2RJnC5fEKw9v2rA6L4PZhSsb"
+			]
+		}
+	},
+	"version": 1
+}

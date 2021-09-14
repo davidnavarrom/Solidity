@@ -1,0 +1,145 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "Ganador",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_edadPersona",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_idPersona",
+						"type": "string"
+					}
+				],
+				"name": "Representar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "VerCandidatos",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "VerResultados",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_candidato",
+						"type": "string"
+					}
+				],
+				"name": "VerVotos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_candidato",
+						"type": "string"
+					}
+				],
+				"name": "Votar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ejercicios solidity/Proyecto Sistema de votacicón/votaciones.sol": "votacion"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ejercicios solidity/Proyecto Sistema de votacicón/votaciones.sol": {
+			"keccak256": "0x6b6da196b1d1da16fbff841ad2f81f746b233196e6fa3a90a719eff3cde7d831",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://48f93da81cb4c19345de82906c896c580add679ccb145d6bc4e8c2a9052a945e",
+				"dweb:/ipfs/QmdVhMArzKUrAKTRDbdvbALd3NcaRXwKn1xCxnFpgGbzaP"
+			]
+		}
+	},
+	"version": 1
+}

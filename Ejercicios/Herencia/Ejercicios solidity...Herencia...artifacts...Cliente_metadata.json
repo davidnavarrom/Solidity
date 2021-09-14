@@ -1,0 +1,155 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "altaCliente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "consultarDinero",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "ingresarDinero",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "mapaCliente",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "billetera",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dinero",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "retirarDinero",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Ejercicios solidity/Herencia/cliente.sol": "Cliente"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Ejercicios solidity/Herencia/banco.sol": {
+			"keccak256": "0x21846e6b54f40afe984bde1252949f0954a20156a5155cc1c129c9a7b3963c7e",
+			"urls": [
+				"bzz-raw://f73181cf3dcabd0124c44784d30c4a60d144f02327663890ddd803697b22a158",
+				"dweb:/ipfs/QmdnMqabm5kX8jWrq89EjXfrSRMYHAiJezChd9v6q2FpBY"
+			]
+		},
+		"Ejercicios solidity/Herencia/cliente.sol": {
+			"keccak256": "0x403cc7ced74c91c031fff5a05d3e9d3c637e8618c80594d8433684fea7bc142d",
+			"urls": [
+				"bzz-raw://8c5d3370666f4a256065c4cc8a4e2c0c5441784cd77b9adda227ac6c16e88340",
+				"dweb:/ipfs/QmQmyooQRr7ztu3Uf5nNFZUxxDUhAhRuR163Cj4GaG3sEo"
+			]
+		}
+	},
+	"version": 1
+}
