@@ -1,6 +1,4 @@
-# Solidity
-
-<h1>Ejercicios y proyectos</h1>
+# Ejercicios y proyectos de Solidity
 
 Este repositorio recoge ejercicios y proyectos que se han realizado en cursos de solidit y engloba las funcionalidades más importantes para un uso real.
 
